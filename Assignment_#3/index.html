@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ms malik</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7fa;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        form {
+            background-color: #fff;
+            width: 50%;
+            margin: 50px auto;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-left: 10px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        button,
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        button:hover,
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        .reset-button {
+            background-color: #f44336;
+        }
+
+        .reset-button:hover {
+            background-color: #e53935;
+        }
+
+        .gender-label,
+        .sports-label {
+            display: inline-block;
+            margin-right: 15px;
+        }
+
+        .gender-input,
+        .sports-input {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <h1>Registration Form</h1>
+
+        <div class="form-group">
+            <label for="first-name">Enter Your First name</label>
+            <input type="text" name="first-name" id="first-name">
+        </div>
+
+        <div class="form-group">
+            <label for="last-name">Enter Your Last name</label>
+            <input type="text" name="last-name" id="last-name">
+        </div>
+
+        <div class="form-group">
+            <label for="password">Enter Your Password</label>
+            <input type="password" name="password" id="password">
+        </div>
+
+        <div class="form-group">
+            <label for="re-password">Re-Enter Your Password</label>
+            <input type="password" name="re-password" id="re-password">
+        </div>
+
+        <div class="form-group">
+            <label for="email">Enter Your Email</label>
+            <input type="email" name="email" id="email">
+        </div>
+
+        <div class="form-group">
+            <label for="mobile">Enter Your Mobile</label>
+            <input type="tel" name="mobile" id="mobile">
+        </div>
+
+        <div class="form-group">
+            <label for="address">Enter Your Address</label>
+            <textarea name="address" id="address" cols="30" rows="10"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label>Select Your Gender</label>
+            <label class="gender-label" for="male">Male</label>
+            <input class="gender-input" type="radio" name="gender" id="male">
+            <label class="gender-label" for="female">Female</label>
+            <input class="gender-input" type="radio" name="gender" id="female">
+            <label class="gender-label" for="others">Others</label>
+            <input class="gender-input" type="radio" name="gender" id="others">
+        </div>
+
+        <div class="form-group">
+            <label>Select Your Fav. Sports</label>
+            <label class="sports-label" for="cricket">Cricket</label>
+            <input class="sports-input" type="checkbox" name="sports" id="cricket">
+            <label class="sports-label" for="football">Football</label>
+            <input class="sports-input" type="checkbox" name="sports" id="football">
+            <label class="sports-label" for="hockey">Hockey</label>
+            <input class="sports-input" type="checkbox" name="sports" id="hockey">
+        </div>
+
+        <div class="form-group">
+            <label for="dob">Select Your Date of Birth</label>
+            <input type="date" name="dob" id="dob">
+        </div>
+
+        <div class="form-group">
+            <label for="country">Select Your Country</label>
+            <select name="country" id="country">
+                <option value="" disabled selected>Choose Your Country</option>
+                <option value="Pakistan">Pakistan</option>
+                <option value="India">India</option>
+                <option value="Iran">Iran</option>
+                <option value="Iraq">Iraq</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="image">Upload Image</label>
+            <input type="file" name="image" id="image">
+        </div>
+
+        <div class="form-group">
+            <input type="submit" value="Submit">
+            <button type="button" class="reset-button" onclick="this.form.reset();">Reset</button>
+        </div>
+    </form>
+</body>
+</html>
