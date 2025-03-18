@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgba(240, 240, 240, 1);
+            text-align: center;
+        }
+
+        h1 {
+            color: rgba(200, 0, 0, 0.9);
+        }
+
+        table {
+            width: 70%;
+            margin: auto;
+            border-collapse: collapse;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: center;
+            border: 2px solid rgba(0, 0, 0, 0.2);
+        }
+
+        th {
+            background: linear-gradient(to right, rgba(255, 0, 0, 0.8), rgba(255, 100, 100, 0.8));
+            color: white;
+            font-size: 18px;
+        }
+
+        td {
+            background-color: rgba(255, 255, 255, 0.9);
+            color: rgba(0, 0, 0, 0.8);
+            font-weight: bold;
+        }
+
+        tr:nth-child(even) td {
+            background-color: rgba(220, 220, 220, 0.9);
+        }
+
+        tr:hover td {
+            background-color: rgba(255, 200, 200, 0.7);
+            transition: 0.3s;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Time Table</h1>
+    <table>
+        <tr>
+            <th rowspan="3">Day</th>
+            <th colspan="5">Seminar</th>
+        </tr>
+        <tr>
+            <td colspan="2">Schedule</td>
+            <td rowspan="2">Topic</td>
+        </tr>
+        <tr>
+            <th>Begin</th>
+            <td>End</td>
+        </tr>
+        <tr>
+            <td rowspan="3">Monday</td>
+            <td rowspan="3">8:00 a.m</td>
+            <td rowspan="3">5:00 p.m</td>
+        </tr>
+        <tr>
+            <td>Introduction to XML</td>
+        </tr>
+        <tr>
+            <td>Validity: DTD and Relax NG</td>
+        </tr>
+        <tr>
+            <td rowspan="3">Tuesday</td>
+            <td>8:00 a.m</td>
+            <td>11:00 a.m</td>
+            <td rowspan="3">XPath</td>
+        </tr>
+        <tr>
+            <td>11:00 a.m</td>
+            <td>2:00 p.m</td>
+        </tr>
+        <tr>
+            <td>2:00 p.m</td>
+            <td>5:00 p.m</td>
+        </tr>
+        <tr>
+            <td>Wednesday</td>
+            <td>8:00 a.m</td>
+            <td>12:00 p.m</td>
+            <td>XSL Formatting Objects</td>
+        </tr>
+    </table>
+
+</body>
+</html>
